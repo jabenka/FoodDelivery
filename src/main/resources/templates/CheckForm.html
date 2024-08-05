@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>CheckForm</title>
+</head>
+<body>
+<h1>Проверка заказа</h1>
+<form th:method="POST" th:action="@{CheckFormSubmit}" th:object="${form}">
+    Введите номер заказа:<label>
+    <input type="text" th:field="*{status}">
+</label>
+    <button type="submit">Найти</button>
+    <h1><span th:text="${result}"></span></h1>
+    <h1><span th:text="${name}"></span></h1>
+</form>
+
+
+
+</body>
+</html>

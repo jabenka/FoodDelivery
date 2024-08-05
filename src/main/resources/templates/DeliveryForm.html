@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>DeliveryForm</title>
+</head>
+<body>
+<form th:method="POST" th:action="@{DeliveryFormSubmit}" th:object="${form}">
+    Название: <label>
+    <input type="text" th:field="*{name}"/>
+</label>
+    Адрес: <label>
+        <input type="text" th:field="*{address}">
+    </label>
+    Телефон:
+    <label>
+        <input type="text" th:field="*{phone}">
+    </label>
+    Электронная почта:
+    <label>
+        <input type="text" th:field="*{email}">
+    </label>
+
+    <input type="submit" value="Готово"/>
+    <h1><span th:text="${success}"></span></h1>
+    <h1>Стоимость: <span th:text="${price}"></span> </h1>
+    <br>
+    <h1>Номер заказа:<span th:text="${id}"></span></h1>
+    <a th:href="@{/home}">Вернуться на главную страницу</a>
+
+</form>
+
+
+</body>
+</html>

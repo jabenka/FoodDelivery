@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Food delivery</title>
+    <style>
+        .rectangle {
+            position: fixed;
+            top: 0;
+            left: 20%;
+            width: 60%;
+            height: 100vh;
+            background-color: blanchedalmond;
+        }
+        .rect{
+            position: fixed;
+            top: 0;
+            left: 30%;
+            width: 40%;
+            height: 100vh;
+            background-color: rgba(255, 228, 196, 0.8);
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        h1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+        .text-left {
+            position: absolute;
+            top: 0;
+            left: 18%;
+            width: 200px;
+            height: 100px;
+            text-align: left;
+            padding: 50px;
+            font-size: 30px;
+        }
+        .text-right{
+            position: absolute;
+            top: 0;
+            right:17%;
+            width: 200px;
+            height: 100px;
+            text-align: right;
+            padding: 50px;
+            font-size: 30px;
+        }
+
+    </style>
+
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="rectangle"></div>
+<div class="rect"></div>
+
+
+<h1 >Доставка еды</h1>
+<div class="text-right">
+    <a  th:href="CheckForm">Проверка заказа</a>
+</div>
+<div class="text-left">
+    <a th:href="@{DeliveryForm}">Новый заказ</a>
+</div>
+
+
+
+
+</body>
+</html>
