@@ -7,3 +7,5 @@ I tried my best
 For database i tried H2 but it wanst good for me,i created it with help of IDEA and i just cant imagine why data is not inserting into the data base,i created table and view and threre is still nothing so i gave up this idea(maybe in web-console data is inserting,idk i didnt check it)
 #
 On the next day i tried it with mysql database and it worked! After hard night of trying to repair h2 i gave up and npw with mysql everything works just fine
+# 
+Aslo i have to admit JPABuddy,its plugin for IDEA and it helped me to understand repositories is spring better(but failure was not my fault)
